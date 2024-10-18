@@ -1,0 +1,78 @@
+/* Header Styles */
+#header {
+    background-color: #1E90FF; /* Fine blue color */
+    color: white;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 250px;
+    right: 0;
+    z-index: 10;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between title and dropdown */
+}
+
+/* Welcome Text */
+.welcome-text {
+    font-size: 1.6rem; /* Larger font size for the welcome message */
+    color: #ffffff; /* White color for better contrast */
+    font-weight: 600; /* Slightly bolder font weight */
+}
+
+/* Admin Photo Styles */
+.admin-photo {
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    border-radius: 50%; /* Circular image */
+    border: 2px solid #ffffff; /* White border for emphasis */
+    object-fit: cover; /* Ensure the image covers the element */
+    margin-right: 10px; /* Space between image and name */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.admin-photo:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Admin Name Styles */
+.admin-name {
+    font-size: 1.2rem; /* Slightly larger font size */
+    color: #ffffff; /* White color for better contrast */
+    font-weight: 500; /* Medium font weight */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+    border-radius: 10px; /* Rounded corners for dropdown */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+}
+
+.dropdown-item {
+    padding: 10px 15px; /* Added padding for comfort */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light white on hover */
+}
+
+.small-icon {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.small-text {
+    font-size: 0.9rem; /* Smaller font for subtext */
+    color: #ffffff; /* White color for subtext */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .welcome-text {
+        font-size: 1.2rem; /* Responsive font size */
+    }
+
+    .admin-name {
+        font-size: 1rem; /* Responsive font size */
+    }
+}
